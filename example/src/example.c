@@ -1,7 +1,6 @@
-#include "jx/jadex.h"
+#include <jx/jadex.h>
 
 #include <stdio.h>
-#include <jx/math/pmath.h>
 
 int main(int argc, char** argv)
 {
