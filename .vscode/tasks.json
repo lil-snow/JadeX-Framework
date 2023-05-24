@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Build Engine",
+			"command": "${workspaceFolder}\\jadex\\build.bat",
+			"group": "build"
+		},
+		{
+			"type": "shell",
+			"label": "Build Example",
+			"command": "${workspaceFolder}\\example\\build.bat",
+			"group": "build"
+		},
+		{
+			"type": "shell",
+			"label": "Build All",
+			"command": "${workspaceFolder}\\scripts\\build_all.bat",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		}
+	]
+}
