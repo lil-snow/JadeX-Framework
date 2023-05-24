@@ -1,4 +1,7 @@
 {
+	"C_Cpp.autocompleteAddParentheses": true,
+	"C_Cpp.default.cStandard": "c17",
+	"C_Cpp.default.cppStandard": "c++20",
 	"todohighlight.isEnable": true,
 	"todohighlight.keywords": [
 		{
@@ -18,5 +21,8 @@
 			"color": "green",
 			"backgroundColor": "rgba(0, 0, 0, 0)"
 		}
-	]
+	],
+	"files.associations": {
+		"buffer.h": "c"
+	}
 }

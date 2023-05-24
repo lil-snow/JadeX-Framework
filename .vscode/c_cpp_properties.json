@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/jadex/include"
+                "${workspaceFolder}/jadex/include",
+                "${workspaceFolder}/jadex/lib/glad/include"
             ],
             "defines": [
                 "_DEBUG",

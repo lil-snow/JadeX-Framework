@@ -39,7 +39,7 @@ typedef JX_I64 				i64;
 // 32-bit floating point number
 typedef JX_F32 				f32;
 #define JX_F32_SIZE_BITS	32
-#define JX_F32_SIZE_BYTS	4
+#define JX_F32_SIZE_BYTES	4
 
 #define JX_F64				double
 // 64-bit floating point number
@@ -73,6 +73,8 @@ typedef JX_U64				u64;
 
 // boolean (8-bit unsigned integer)
 typedef u8					b8;
+
+typedef void*				ptr;
 
 #ifdef JX_BUILD_DLL
 	#if JX_COMPILER == JX_COMPILER_MSVC

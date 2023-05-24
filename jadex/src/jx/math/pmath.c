@@ -1,6 +1,8 @@
 #include "jx/math/pmath.h"
 
+#if !defined(JX_NO_SIMD)
 #include <xmmintrin.h>
+#endif
 
 group_2f32 jx_group_2f32_create(f32 a, f32 b)
 {

@@ -1,15 +1,23 @@
-#include "jx/jadex.h"
+#include <jx/jadex.h>
+#include <jx/gfx/buffer.h>
+#include <jx/math/pmath.h>
 
 #include <stdio.h>
-#include <jx/math/pmath.h>
 
 int main(int argc, char** argv)
 {
-	v2f32 a = jx_v2f32_create(2.0F, 4.0F);
-	v2f32 b = jx_v2f32_create(6.0F, 10.0F);
-	a = jx_v2f32_add(a, b);
+	f32 data[] = {
+		-0.5f, -0.5f,
+		 0.0f,  0.5f,
+		 0.5f, -0.5f
+	};
 
-	printf("%f, %f\n", a.x, a.y);
+	vbo buffer = jx_vbo_create(6, data);
+	jx_vbo_bind(buffer);
+
+	printf("%i", (u32) buffer.handle);
 
 	while (1);
+
+	return 0;
 }
