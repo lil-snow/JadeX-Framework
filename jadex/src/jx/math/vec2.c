@@ -1,8 +1,5 @@
 #include "jx/math/vec2.h"
 
-#include "jx/math/math.h"
-#include "jx/math/pmath.h"
-
 v2f32 jx_v2f32_create(f32 x, f32 y)
 {
 	v2f32 vector;
@@ -31,15 +28,6 @@ v2f32 jx_v2f32_norm(v2f32 v)
 v2f32 jx_v2f32_add(v2f32 a, v2f32 b)
 {
 	return jx_v2f32_create(a.x + b.x, a.y + b.y);
-}
-
-v2f32 jx_v2f32_padd(v2f32 a, v2f32 b)
-{
-	group_2f32 left = jx_group_2f32_create(a.x, a.y);
-	group_2f32 right = jx_group_2f32_create(b.x, b.y);
-	group_2f32 result = jx_group_2f32_padd(left, right);
-
-	return jx_v2f32_create(result.a, result.b);
 }
 
 v2f32 jx_v2f32_sub(v2f32 a, v2f32 b)

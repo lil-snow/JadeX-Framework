@@ -6,7 +6,7 @@
 	"todohighlight.keywords": [
 		{
 			"text": "TODO: ",
-			"color": "red",
+			"color": "#c1ff9c",
 			"backgroundColor": "rgba(0, 0, 0, 0)"
 		},
 

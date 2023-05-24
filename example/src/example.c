@@ -1,6 +1,4 @@
 #include <jx/jadex.h>
-#include <jx/gfx/buffer.h>
-#include <jx/math/pmath.h>
 
 #include <stdio.h>
 

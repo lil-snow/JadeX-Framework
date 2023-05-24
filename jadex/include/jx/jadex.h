@@ -4,13 +4,12 @@
 // ----------------
 //     * Core *
 // ----------------
-#include "jx/base.h"
-#include "jx/platform.h"
+#include "jx/core/base.h"
+#include "jx/core/platform.h"
 
 // ----------------
 //     * Math *
 // ----------------
-#include "jx/math/math.h"
 #include "jx/math/vec2.h"
 
 #endif // JX_JADEX_H_INCLUDE
